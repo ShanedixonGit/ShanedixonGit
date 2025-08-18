@@ -31,13 +31,17 @@
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)  
 
----
-
-# 🌱 Personal Stack
 **Collaboration & Productivity:**  
 ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Confluence](https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white)  
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)  
 ![Obsidian](https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=white)  
+
+**Soft Skills:**  
+![Analytical Problem Solving](https://img.shields.io/badge/Analytical_Problem_Solving-%23007ACC.svg?style=for-the-badge&logoColor=white) 
+![Excellent Communication](https://img.shields.io/badge/Excellent_Communication-%23FF6F00.svg?style=for-the-badge&logoColor=white) 
+![Strong Stakeholder Management](https://img.shields.io/badge/Strong_Stakeholder_Management-%2300C853.svg?style=for-the-badge&logoColor=white) 
+![Time Management](https://img.shields.io/badge/Time_Management-%23009688.svg?style=for-the-badge&logoColor=white) 
+![Continuous Learning](https://img.shields.io/badge/Continuous_Learning-%2300B0FF.svg?style=for-the-badge&logoColor=white)  
 
 ---
 
