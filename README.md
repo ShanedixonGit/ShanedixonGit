@@ -53,7 +53,6 @@
 ![Excellent Communication](https://img.shields.io/badge/Excellent_Communication-%23FF6F00.svg?style=for-the-badge&logoColor=white) 
 ![Strong Stakeholder Management](https://img.shields.io/badge/Strong_Stakeholder_Management-%2300C853.svg?style=for-the-badge&logoColor=white) 
 ![Time Management](https://img.shields.io/badge/Time_Management-%23009688.svg?style=for-the-badge&logoColor=white) 
-![Continuous Learning](https://img.shields.io/badge/Continuous_Learning-%2300B0FF.svg?style=for-the-badge&logoColor=white)  
 
 ---
 
