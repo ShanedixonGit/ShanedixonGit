@@ -62,7 +62,7 @@
 <img height="44" src="assets/icons/zellij.svg" alt="Zellij" title="Zellij — terminal multiplexer, panes and persistent sessions" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/vim/vim-original.svg" alt="Vim" title="Vim — modal editing, in the terminal" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/git/git-original.svg" alt="Git" title="Git — version control and collaboration" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.simpleicons.org/claude/F85149" alt="Claude" title="Claude — pair programming and analysis in the terminal" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/claude-code.svg" alt="Claude Code" title="Claude Code — pair programming and analysis in the terminal" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/codex.svg" alt="Codex" title="Codex — OpenAI's coding agent, also in the terminal" />
 
 </div>
