@@ -148,10 +148,10 @@ def main():
         days = fetch_days()
     except Exception as e:
         print(f"contribution fetch failed: {e}", file=sys.stderr)
-        return 0
+        return 1
     if not days:
         print("no contribution data parsed", file=sys.stderr)
-        return 0
+        return 1
     with open(os.path.join(OUT, "activity-graph.svg"), "w") as f:
         f.write(activity_svg(days))
     print(f"rendered {len(days)} days, {sum(c for _, c in days)} contributions")
