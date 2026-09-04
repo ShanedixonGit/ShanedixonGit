@@ -21,8 +21,8 @@ jobs:
         with:
           github_user_name: ShanedixonGit
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=#DA3633&color_dots=#EBEDF0,#FFCECB,#FF9492,#F85149,#B62324
+            dist/github-snake-dark.svg?color_snake=#FF7B72&color_dots=#161B22,#5C1E1E,#8E1519,#DA3633,#F85149
 
       - name: Render activity graph and quote
         run: |
