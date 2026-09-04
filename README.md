@@ -19,11 +19,11 @@
 <tr>
 <td>
 
-**a.** &nbsp;I'm a **supply chain analyst** with 3+ years in retail logistics, sitting right where operations meet engineering — I spend as much time on the warehouse floor logic as I do in the query editor.
+**a.** &nbsp;I'm a **supply chain analyst** with 4+ years in retail logistics, sitting right where operations meet engineering. I spend as much time on the warehouse floor logic as I do in the query editor.
 
-**b.** &nbsp;I build **internal tools that people actually open every morning**: Streamlit planners, single-file HTML validators, Oracle and Databricks pipelines that replace someone's fragile spreadsheet.
+**b.** &nbsp;I build operational tools that turn complex workflows into scalable, reliable systems - from planning and validation applications to Databricks pipelines that replace manual, spreadsheet-driven processes.
 
-**c.** &nbsp;I'm currently pushing into **machine learning and forecasting** — moving from describing what happened to predicting what's about to, and wiring LLMs into analytics workflows where they genuinely earn their place.
+**c.** &nbsp;I'm expanding into Data Engineering and Machine Learning, building the systems and pipelines that turn raw operational data into reliable insights, forecasts, and intelligent workflows.
 
 </td>
 </tr>
@@ -40,18 +40,11 @@
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript — single-file browser tools and dashboards" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/html5/html5-original.svg" alt="HTML5" title="HTML5 — self-contained internal tools" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/css3/css3-original.svg" alt="CSS3" title="CSS3 — styling for internal tools and dashboards" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.simpleicons.org/gnubash/4EAA25" alt="Bash" title="Bash — automation and scheduled jobs" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/powershell/powershell-original.svg" alt="PowerShell" title="PowerShell — Windows-side automation" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/oracle/oracle-original.svg" alt="Oracle" title="Oracle — PL/SQL against real-time operational data" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks" title="Databricks — historic data at scale" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL — relational modelling and analytics" />
-
-<br/><br/>
-
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL — relational modelling and analytics" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite — local analysis and quick prototypes" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.simpleicons.org/pandas/E70488" alt="pandas" title="pandas — data wrangling and feature building" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt="Streamlit" title="Streamlit — internal planning and forecasting apps" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg" alt="Power BI" title="Power BI — reporting for operations teams" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana — operational dashboards and monitoring" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/jupyter/jupyter-original.svg" alt="Jupyter" title="Jupyter — exploratory analysis and notebooks" />&nbsp;&nbsp;&nbsp;
