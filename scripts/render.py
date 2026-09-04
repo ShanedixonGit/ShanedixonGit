@@ -1,7 +1,7 @@
 import datetime
 import html
+import math
 import os
-import random
 import re
 import sys
 import textwrap
@@ -11,28 +11,24 @@ USER = os.environ.get("GH_USER", "ShanedixonGit")
 OUT = os.environ.get("OUT_DIR", "dist")
 DAYS = int(os.environ.get("DAYS", 30))
 
-QUOTES = [
-    ("Everything should be made as simple as possible, but not simpler.", "Albert Einstein"),
-    ("In God we trust. All others must bring data.", "W. Edwards Deming"),
-    ("The goal is to turn data into information, and information into insight.", "Carly Fiorina"),
-    ("Torture the data long enough and it will confess to anything.", "Ronald Coase"),
-    ("Premature optimisation is the root of all evil.", "Donald Knuth"),
-    ("All models are wrong, but some are useful.", "George Box"),
-    ("Simplicity is the soul of efficiency.", "Austin Freeman"),
-    ("Without data you're just another person with an opinion.", "W. Edwards Deming"),
-    ("Make it work, make it right, make it fast.", "Kent Beck"),
-    ("The most damaging phrase in the language is: we've always done it this way.", "Grace Hopper"),
-    ("Data is a precious thing and will last longer than the systems themselves.", "Tim Berners-Lee"),
-    ("If you can't describe what you are doing as a process, you don't know what you're doing.", "W. Edwards Deming"),
-    ("Programs must be written for people to read, and only incidentally for machines to execute.", "Harold Abelson"),
-    ("It is a capital mistake to theorise before one has data.", "Arthur Conan Doyle"),
-    ("The best way to get the right answer is to state the wrong one confidently.", "Cunningham's Law"),
-    ("Talk is cheap. Show me the code.", "Linus Torvalds"),
-    ("A good forecast is not the one that is right, it is the one you can defend.", "Anonymous"),
-    ("Complexity is the enemy of execution.", "Tony Robbins"),
-    ("First, solve the problem. Then, write the code.", "John Johnson"),
-    ("Numbers have an important story to tell. They rely on you to give them a voice.", "Stephen Few"),
-]
+QUOTE = "The right question is usually more important than the right answer"
+QUOTE_ATTRIB = "Attributed to Plato"
+
+PALETTE = """
+  .grid { stroke: #D1242F; stroke-opacity: .18; }
+  .tick { fill: #57606A; font-size: 11px; }
+  .head { fill: #57606A; font-size: 12px; letter-spacing: 2px; }
+  .edge { stroke: #DA3633; }
+  .node { fill: #DA3633; }
+  .halo { stroke: #DA3633; }
+  @media (prefers-color-scheme: dark) {
+    .grid { stroke: #F85149; stroke-opacity: .16; }
+    .tick, .head { fill: #8B949E; }
+    .edge { stroke: #F85149; }
+    .node { fill: #FF7B72; }
+    .halo { stroke: #FF7B72; }
+  }
+"""
 
 
 def fetch_days():
@@ -73,69 +69,90 @@ def activity_svg(days):
     pts = [(PL + i * step, PT + ih - (v / top) * ih) for i, v in enumerate(vals)]
     line = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
     area = f"{PL:.1f},{PT + ih:.1f} " + line + f" {PL + (len(pts) - 1) * step:.1f},{PT + ih:.1f}"
+    length = sum(math.dist(pts[i], pts[i + 1]) for i in range(len(pts) - 1)) or 1
 
     s = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
         'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
-        """<style>
-  .g { stroke: #8B949E; stroke-opacity: .2; }
-  .t { fill: #57606A; font-size: 11px; }
-  .h { fill: #57606A; font-size: 12px; letter-spacing: 2px; }
-  @media (prefers-color-scheme: dark) { .t, .h { fill: #8B949E; } }
-</style>""",
+        f"<style>{PALETTE}</style>",
         '<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1">'
-        '<stop offset="0%" stop-color="#1F6FEB" stop-opacity="0.42"/>'
-        '<stop offset="100%" stop-color="#1F6FEB" stop-opacity="0.02"/></linearGradient></defs>',
-        f'<text class="h" x="{PL}" y="24">COMMIT ACTIVITY &#183; LAST {len(days)} DAYS</text>',
+        '<stop offset="0%" stop-color="#F85149" stop-opacity="0.40"/>'
+        '<stop offset="100%" stop-color="#F85149" stop-opacity="0.02"/></linearGradient></defs>',
+        f'<text class="head" x="{PL}" y="24" opacity="0">COMMIT ACTIVITY &#183; LAST {len(days)} DAYS'
+        '<animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.6s" fill="freeze" /></text>',
     ]
 
     for k in range(5):
         y = PT + ih - (ih * k / 4)
-        s.append(f'<line class="g" x1="{PL}" y1="{y:.1f}" x2="{W - PR}" y2="{y:.1f}" />')
-        s.append(f'<text class="t" x="{PL - 10}" y="{y + 4:.1f}" text-anchor="end">{round(top * k / 4)}</text>')
+        b = 0.05 * k
+        s.append(f'<line class="grid" x1="{PL}" y1="{y:.1f}" x2="{W - PR}" y2="{y:.1f}" opacity="0">'
+                 f'<animate attributeName="opacity" from="0" to="1" begin="{b:.2f}s" dur="0.5s" fill="freeze" /></line>')
+        s.append(f'<text class="tick" x="{PL - 10}" y="{y + 4:.1f}" text-anchor="end" opacity="0">{round(top * k / 4)}'
+                 f'<animate attributeName="opacity" from="0" to="1" begin="{b:.2f}s" dur="0.5s" fill="freeze" /></text>')
 
-    s.append(f'<polygon points="{area}" fill="url(#f)" />')
-    s.append(f'<polyline points="{line}" fill="none" stroke="#2F81F7" stroke-width="2.2" '
-             'stroke-linejoin="round" stroke-linecap="round" />')
+    s.append(f'<polygon points="{area}" fill="url(#f)" opacity="0">'
+             '<animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.9s" fill="freeze" /></polygon>')
+    s.append(f'<polyline class="edge" points="{line}" fill="none" stroke-width="2.2" '
+             f'stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="{length:.1f}" '
+             f'stroke-dashoffset="{length:.1f}">'
+             f'<animate attributeName="stroke-dashoffset" from="{length:.1f}" to="0" begin="0.25s" dur="1.7s" '
+             'calcMode="spline" keySplines="0.37 0 0.21 1" fill="freeze" /></polyline>')
 
     peak = max(range(len(vals)), key=lambda i: vals[i])
     if vals[peak]:
         px, py = pts[peak]
-        s.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4.5" fill="#58A6FF" />')
+        s.append(f'<circle class="halo" cx="{px:.1f}" cy="{py:.1f}" r="4.5" fill="none" stroke-width="1.5" opacity="0">'
+                 '<animate attributeName="r" values="4.5;13" begin="2.2s" dur="2.4s" repeatCount="indefinite" />'
+                 '<animate attributeName="opacity" values="0.55;0" begin="2.2s" dur="2.4s" repeatCount="indefinite" /></circle>')
+        s.append(f'<circle class="node" cx="{px:.1f}" cy="{py:.1f}" r="0">'
+                 '<animate attributeName="r" values="0;5.8;4.5" keyTimes="0;0.68;1" begin="1.95s" '
+                 'dur="0.55s" fill="freeze" /></circle>')
 
     for i in (0, len(days) // 2, len(days) - 1):
         d = datetime.date.fromisoformat(days[i][0])
         anchor = "start" if i == 0 else ("end" if i == len(days) - 1 else "middle")
-        s.append(f'<text class="t" x="{PL + i * step:.1f}" y="{PT + ih + 24:.0f}" '
-                 f'text-anchor="{anchor}">{d.strftime("%d %b")}</text>')
+        s.append(f'<text class="tick" x="{PL + i * step:.1f}" y="{PT + ih + 24:.0f}" '
+                 f'text-anchor="{anchor}" opacity="0">{d.strftime("%d %b")}'
+                 '<animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.6s" fill="freeze" /></text>')
 
     total = sum(vals)
-    s.append(f'<text class="t" x="{W - PR}" y="24" text-anchor="end">{total} contributions</text>')
+    s.append(f'<text class="tick" x="{W - PR}" y="24" text-anchor="end" opacity="0">{total} contributions'
+             '<animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.6s" fill="freeze" /></text>')
     s.append("</svg>")
     return "\n".join(s)
 
 
 def quote_svg():
-    seed = datetime.date.today().toordinal()
-    text, author = random.Random(seed).choice(QUOTES)
-    lines = textwrap.wrap(text, 62)
+    lines = textwrap.wrap(QUOTE, 52)
     W = 820
     H = 58 + len(lines) * 30
+    bar = H - 34
     s = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
         'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">',
         """<style>
-  .q { fill: #57606A; font-size: 16px; font-style: italic; }
-  .a { fill: #2F81F7; font-size: 13px; font-weight: 700; }
-  @media (prefers-color-scheme: dark) { .q { fill: #B9C2CC; } }
+  .quote { fill: #57606A; font-size: 16px; font-style: italic; }
+  .by    { fill: #B62324; font-size: 13px; font-weight: 700; }
+  .rule  { stroke: #DA3633; }
+  @media (prefers-color-scheme: dark) {
+    .quote { fill: #B9C2CC; }
+    .by    { fill: #FF7B72; }
+    .rule  { stroke: #F85149; }
+  }
 </style>""",
-        f'<line x1="0" y1="8" x2="0" y2="{H - 34}" stroke="#2F81F7" stroke-width="3" />',
+        f'<line class="rule" x1="0" y1="8" x2="0" y2="8" stroke-width="3" stroke-linecap="round">'
+        f'<animate attributeName="y2" from="8" to="{bar}" begin="0.1s" dur="0.8s" '
+        'calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze" /></line>',
     ]
     for i, ln in enumerate(lines):
-        s.append(f'<text class="q" x="{W / 2:.0f}" y="{34 + i * 30}" text-anchor="middle">'
-                 f'{html.escape(ln)}</text>')
-    s.append(f'<text class="a" x="{W / 2:.0f}" y="{34 + len(lines) * 30 + 6}" text-anchor="middle">'
-             f'&#8212; {html.escape(author)}</text>')
+        s.append(f'<text class="quote" x="{W / 2:.0f}" y="{34 + i * 30}" text-anchor="middle" opacity="0">'
+                 f'{html.escape(ln)}'
+                 f'<animate attributeName="opacity" from="0" to="1" begin="{0.35 + i * 0.22:.2f}s" dur="0.7s" fill="freeze" />'
+                 '</text>')
+    s.append(f'<text class="by" x="{W / 2:.0f}" y="{34 + len(lines) * 30 + 6}" text-anchor="middle" opacity="0">'
+             f'&#8212; {html.escape(QUOTE_ATTRIB)}'
+             f'<animate attributeName="opacity" from="0" to="1" begin="{0.35 + len(lines) * 0.22:.2f}s" dur="0.7s" fill="freeze" />'
+             '</text>')
     s.append("</svg>")
     return "\n".join(s)
 
