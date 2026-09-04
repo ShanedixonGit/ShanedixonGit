@@ -25,7 +25,9 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
 
       - name: Render activity graph and quote
-        run: python3 scripts/render.py
+        run: |
+          sudo chown -R "$USER" dist
+          python3 scripts/render.py
         env:
           GH_USER: ShanedixonGit
           OUT_DIR: dist
