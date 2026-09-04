@@ -77,7 +77,7 @@
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ShanedixonGit&custom_title=Commit%20activity&bg_color=00000000&color=8B949E&line=2F81F7&point=58A6FF&area=true&area_color=1F6FEB&hide_border=true&days=90" alt="Commit activity line graph" width="100%" />
+<img src="https://raw.githubusercontent.com/ShanedixonGit/ShanedixonGit/output/activity-graph.svg" alt="Commit activity" width="100%" />
 
 <br/><br/>
 
@@ -98,17 +98,6 @@
 <img src="https://streak-stats.demolab.com?user=ShanedixonGit&hide_border=true&background=00000000&stroke=8B949E&ring=2F81F7&fire=2F81F7&currStreakNum=2F81F7&currStreakLabel=2F81F7&sideNums=8B949E&sideLabels=8B949E&dates=8B949E" alt="Contribution streak" />
 
 </div>
-
-<details>
-<summary><b>Trophy cabinet &nbsp;↴</b></summary>
-
-<br/>
-
-<div align="center">
-<img src="https://github-trophies.vercel.app/?username=ShanedixonGit&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="Trophies" />
-</div>
-
-</details>
 
 ---
 
@@ -140,7 +129,7 @@
 
 <br/><br/>
 
-<i>Always happy to talk supply chain analytics, forecasting, or the tools that hold operations together.</i>
+<img src="https://raw.githubusercontent.com/ShanedixonGit/ShanedixonGit/output/quote.svg" alt="Quote of the day" width="620" />
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:58A6FF,55:1F6FEB,100:0D1117&section=footer&animation=fadeIn" width="100%" />
 
