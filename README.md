@@ -49,8 +49,8 @@
 `data & bi`
 
 <img height="44" src="assets/icons/databases.svg" alt="Databases" title="Databases — Oracle (PL/SQL, real-time operational data) · Databricks (historic data at scale) · PostgreSQL · MySQL · SQLite" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/jupyter/jupyter-original.svg" alt="Jupyter" title="Jupyter — exploratory analysis and notebooks" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg" alt="Power BI" title="Power BI — reporting for operations teams" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/jupyter.svg" alt="Jupyter" title="Jupyter — exploratory analysis and notebooks" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/powerbi.svg" alt="Power BI" title="Power BI — reporting for operations teams" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana — operational dashboards and monitoring" />
 
 <br/>
@@ -127,7 +127,7 @@
 <div align="center">
 
 <a href="https://www.linkedin.com/in/shane-dixon/">
-  <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=F85149" alt="LinkedIn" title="Connect with me on LinkedIn" />
+  <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjg1MTQ5IiBkPSJNMjEuMDYgNDguNzNoMTguMTFWMTA3SDIxLjA2em05LjA2LTI5YTEwLjUgMTAuNSAwIDExLTEwLjUgMTAuNDkgMTAuNSAxMC41IDAgMDExMC41LTEwLjQ5TTUwLjUzIDQ4LjczaDE3LjM2djhoLjI0YzIuNDItNC41OCA4LjMyLTkuNDEgMTcuMTMtOS40MUMxMDMuNiA0Ny4yOCAxMDcgNTkuMzUgMTA3IDc1djMySDg4Ljg5Vjc4LjY1YzAtNi43NS0uMTItMTUuNDQtOS40MS0xNS40NHMtMTAuODcgNy4zNi0xMC44NyAxNVYxMDdINTAuNTN6Ii8%2BPC9zdmc%2B" alt="LinkedIn" title="Connect with me on LinkedIn" />
 </a>
 <a href="https://github.com/ShanedixonGit">
   <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=F85149" alt="GitHub" title="My GitHub profile" />
