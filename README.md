@@ -35,22 +35,35 @@
 
 <div align="center">
 
+`languages & markup`
+
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/python/python-original.svg" alt="Python" title="Python — main language for analysis, pipelines and internal tooling" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/r/r-original.svg" alt="R" title="R — statistical modelling and exploratory analysis" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/sql.svg" alt="SQL" title="SQL — the language underneath everything below: window functions, CTEs, query tuning" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript — single-file browser tools and dashboards" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/html5/html5-original.svg" alt="HTML5" title="HTML5 — self-contained internal tools" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/css3/css3-original.svg" alt="CSS3" title="CSS3 — styling for internal tools and dashboards" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/oracle/oracle-original.svg" alt="Oracle" title="Oracle — PL/SQL against real-time operational data" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks" title="Databricks — historic data at scale" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL — relational modelling and analytics" />
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL — relational modelling and analytics" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite — local analysis and quick prototypes" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg" alt="Power BI" title="Power BI — reporting for operations teams" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana — operational dashboards and monitoring" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/css3/css3-original.svg" alt="CSS3" title="CSS3 — styling for internal tools and dashboards" />
+
+<br/>
+
+`data & bi`
+
+<img height="44" src="assets/icons/databases.svg" alt="Databases" title="Databases — Oracle (PL/SQL, real-time operational data) · Databricks (historic data at scale) · PostgreSQL · MySQL · SQLite" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/jupyter/jupyter-original.svg" alt="Jupyter" title="Jupyter — exploratory analysis and notebooks" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/microsoft/PowerBI-Icons@main/SVG/Power-BI.svg" alt="Power BI" title="Power BI — reporting for operations teams" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/grafana/grafana-original.svg" alt="Grafana" title="Grafana — operational dashboards and monitoring" />
+
+<br/>
+
+`environment`
+
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/linux/linux-original.svg" alt="Linux" title="Linux — shell environment and servers" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/terminal.svg" alt="macOS Terminal" title="macOS Terminal — where the day actually happens" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/zellij.svg" alt="Zellij" title="Zellij — terminal multiplexer, panes and persistent sessions" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/vim/vim-original.svg" alt="Vim" title="Vim — modal editing, in the terminal" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/git/git-original.svg" alt="Git" title="Git — version control and collaboration" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code — editor and extensions" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/linux/linux-original.svg" alt="Linux" title="Linux — shell environment and servers" />
+<img height="44" src="https://cdn.simpleicons.org/claude/F85149" alt="Claude" title="Claude — pair programming and analysis in the terminal" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/codex.svg" alt="Codex" title="Codex — OpenAI's coding agent, also in the terminal" />
 
 </div>
 
