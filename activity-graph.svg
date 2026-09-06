@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<style>
+  .grid { stroke: #D1242F; stroke-opacity: .18; }
+  .tick { fill: #57606A; font-size: 11px; }
+  .head { fill: #57606A; font-size: 12px; letter-spacing: 2px; }
+  .edge { stroke: #DA3633; }
+  .node { fill: #DA3633; }
+  .halo { stroke: #DA3633; }
+  @media (prefers-color-scheme: dark) {
+    .grid { stroke: #F85149; stroke-opacity: .16; }
+    .tick, .head { fill: #8B949E; }
+    .edge { stroke: #F85149; }
+    .node { fill: #FF7B72; }
+    .halo { stroke: #FF7B72; }
+  }
+</style>
+<defs><linearGradient id="f" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F85149" stop-opacity="0.40"/><stop offset="100%" stop-color="#F85149" stop-opacity="0.02"/></linearGradient></defs>
+<text class="head" x="52" y="24" opacity="0">COMMIT ACTIVITY &#183; LAST 30 DAYS<animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.6s" fill="freeze" /></text>
+<line class="grid" x1="52" y1="218.0" x2="876" y2="218.0" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.00s" dur="0.5s" fill="freeze" /></line>
+<text class="tick" x="42" y="222.0" text-anchor="end" opacity="0">0<animate attributeName="opacity" from="0" to="1" begin="0.00s" dur="0.5s" fill="freeze" /></text>
+<line class="grid" x1="52" y1="175.0" x2="876" y2="175.0" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.05s" dur="0.5s" fill="freeze" /></line>
+<text class="tick" x="42" y="179.0" text-anchor="end" opacity="0">4<animate attributeName="opacity" from="0" to="1" begin="0.05s" dur="0.5s" fill="freeze" /></text>
+<line class="grid" x1="52" y1="132.0" x2="876" y2="132.0" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.10s" dur="0.5s" fill="freeze" /></line>
+<text class="tick" x="42" y="136.0" text-anchor="end" opacity="0">7<animate attributeName="opacity" from="0" to="1" begin="0.10s" dur="0.5s" fill="freeze" /></text>
+<line class="grid" x1="52" y1="89.0" x2="876" y2="89.0" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.5s" fill="freeze" /></line>
+<text class="tick" x="42" y="93.0" text-anchor="end" opacity="0">10<animate attributeName="opacity" from="0" to="1" begin="0.15s" dur="0.5s" fill="freeze" /></text>
+<line class="grid" x1="52" y1="46.0" x2="876" y2="46.0" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.5s" fill="freeze" /></line>
+<text class="tick" x="42" y="50.0" text-anchor="end" opacity="0">14<animate attributeName="opacity" from="0" to="1" begin="0.20s" dur="0.5s" fill="freeze" /></text>
+<polygon points="52.0,218.0 52.0,218.0 80.4,218.0 108.8,218.0 137.2,218.0 165.7,218.0 194.1,218.0 222.5,218.0 250.9,218.0 279.3,218.0 307.7,218.0 336.1,218.0 364.6,218.0 393.0,218.0 421.4,218.0 449.8,218.0 478.2,218.0 506.6,218.0 535.0,218.0 563.4,218.0 591.9,218.0 620.3,218.0 648.7,181.1 677.1,218.0 705.5,218.0 733.9,82.9 762.3,181.1 790.8,218.0 819.2,46.0 847.6,218.0 876.0,218.0 876.0,218.0" fill="url(#f)" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.9s" fill="freeze" /></polygon>
+<polyline class="edge" points="52.0,218.0 80.4,218.0 108.8,218.0 137.2,218.0 165.7,218.0 194.1,218.0 222.5,218.0 250.9,218.0 279.3,218.0 307.7,218.0 336.1,218.0 364.6,218.0 393.0,218.0 421.4,218.0 449.8,218.0 478.2,218.0 506.6,218.0 535.0,218.0 563.4,218.0 591.9,218.0 620.3,218.0 648.7,181.1 677.1,218.0 705.5,218.0 733.9,82.9 762.3,181.1 790.8,218.0 819.2,46.0 847.6,218.0 876.0,218.0" fill="none" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1353.8" stroke-dashoffset="1353.8"><animate attributeName="stroke-dashoffset" from="1353.8" to="0" begin="0.25s" dur="1.7s" calcMode="spline" keySplines="0.37 0 0.21 1" fill="freeze" /></polyline>
+<circle class="halo" cx="819.2" cy="46.0" r="4.5" fill="none" stroke-width="1.5" opacity="0"><animate attributeName="r" values="4.5;13" begin="2.2s" dur="2.4s" repeatCount="indefinite" /><animate attributeName="opacity" values="0.55;0" begin="2.2s" dur="2.4s" repeatCount="indefinite" /></circle>
+<circle class="node" cx="819.2" cy="46.0" r="0"><animate attributeName="r" values="0;5.8;4.5" keyTimes="0;0.68;1" begin="1.95s" dur="0.55s" fill="freeze" /></circle>
+<text class="tick" x="52.0" y="242" text-anchor="start" opacity="0">08 Aug<animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.6s" fill="freeze" /></text>
+<text class="tick" x="478.2" y="242" text-anchor="middle" opacity="0">23 Aug<animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.6s" fill="freeze" /></text>
+<text class="tick" x="876.0" y="242" text-anchor="end" opacity="0">06 Sep<animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.6s" fill="freeze" /></text>
+<text class="tick" x="876" y="24" text-anchor="end" opacity="0">31 contributions<animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.6s" fill="freeze" /></text>
+</svg>
