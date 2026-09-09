@@ -41,6 +41,7 @@
 <img height="44" src="assets/icons/r.svg" alt="R" title="R" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/sql.svg" alt="SQL" title="SQL" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/javascript.svg" alt="JavaScript" title="JavaScript" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/typescript.svg" alt="TypeScript" title="TypeScript" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/html5.svg" alt="HTML5" title="HTML5" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/css3.svg" alt="CSS3" title="CSS3" />
 
