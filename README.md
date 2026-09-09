@@ -61,7 +61,7 @@
 `environment`
 
 <img height="44" src="assets/icons/linux.svg" alt="Linux" title="Linux" />&nbsp;&nbsp;&nbsp;
-<img height="44" src="assets/icons/iterm2.svg" alt="iTerm2" title="iTerm2" />&nbsp;&nbsp;&nbsp;
+<img height="44" src="assets/icons/ghostty.svg" alt="Ghostty" title="Ghostty" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/zellij.svg" alt="Zellij" title="Zellij" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/vim.svg" alt="Vim" title="Vim" />&nbsp;&nbsp;&nbsp;
 <img height="44" src="assets/icons/git.svg" alt="Git" title="Git" />&nbsp;&nbsp;&nbsp;
