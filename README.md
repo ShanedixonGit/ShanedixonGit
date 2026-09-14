@@ -139,8 +139,4 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/ShanedixonGit/ShanedixonGit/output/quote.svg" alt="Quote of the day" width="620" />
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:F85149,55:8E1519,100:0D1117&section=footer&animation=fadeIn" width="100%" />
-
 </div>
