@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 118" width="820" height="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<style>
+  .quote { fill: #57606A; font-size: 16px; font-style: italic; }
+  .by    { fill: #B62324; font-size: 13px; font-weight: 700; }
+  .rule  { stroke: #DA3633; }
+  @media (prefers-color-scheme: dark) {
+    .quote { fill: #B9C2CC; }
+    .by    { fill: #FF7B72; }
+    .rule  { stroke: #F85149; }
+  }
+</style>
+<line class="rule" x1="0" y1="8" x2="0" y2="8" stroke-width="3" stroke-linecap="round"><animate attributeName="y2" from="8" to="84" begin="0.1s" dur="0.8s" calcMode="spline" keySplines="0.22 1 0.36 1" fill="freeze" /></line>
+<text class="quote" x="410" y="34" text-anchor="middle" opacity="0">The right question is usually more important than<animate attributeName="opacity" from="0" to="1" begin="0.35s" dur="0.7s" fill="freeze" /></text>
+<text class="quote" x="410" y="64" text-anchor="middle" opacity="0">the right answer<animate attributeName="opacity" from="0" to="1" begin="0.57s" dur="0.7s" fill="freeze" /></text>
+<text class="by" x="410" y="100" text-anchor="middle" opacity="0">&#8212; Attributed to Plato<animate attributeName="opacity" from="0" to="1" begin="0.79s" dur="0.7s" fill="freeze" /></text>
+</svg>
